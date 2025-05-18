@@ -1,0 +1,169 @@
+body {
+    background-color: #e1e1e3
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, label {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+h1 {
+    color:green;
+    text-align: center;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+    font-weight: 550;
+}
+
+p, li, label {
+    font-weight: 400;
+}
+
+.navbar ul {
+    background-color: #8EBE25;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a:hover {
+    background-color: #546C18
+}
+
+.contact {
+    text-align: center;
+}
+
+.homepage {
+    text-align: center;
+}
+
+.banner {
+    height: 300px;
+    background-image: url("homepage_banner.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner-content {
+    border: 3px solid white;
+    background-color: #dedfe0da;
+    width: 800px;
+    position: relative;
+    top: 90px;
+    margin: auto;
+}
+
+.banner-content h2 {
+    color: #1c3618;
+}
+
+.banner-content h3 a {
+    color: #1c3618;
+}
+
+.service div {
+    display: inline-block;
+    width: 350px;
+    height: 200px;
+    background-color:#8EBE25;
+    border: 3px solid #1c3618;
+    margin: 5px 25px;
+    background-size: cover;
+}
+
+#service-box-1 {
+    background-image: url("homepage_maintenance.jpg");
+}
+
+#service-box-2 {
+    background-image: url("homepage_installation.jpg");
+}
+
+.testimonial {
+    margin-top: 50px;
+    padding-top: 20px;
+    height: 350px;
+    background-color: #dfe8df;
+}
+
+.container-white, .container-green {
+    display: table;
+    width: 100%;
+}
+
+.container-white {
+    background-color: #FFFFFF;
+}
+
+.container-green {
+    background-color: #dfe8df;
+}
+
+.content {
+    display: table-cell;
+    vertical-align: top;
+    padding: 50px;
+}
+
+.image {
+    display: table-cell;
+    vertical-align: top;
+    background-size: cover;
+    background-position: center;
+}
+
+.maintenance {
+    height: 600px;
+    width: 60%;
+}
+
+.maintenance-img {
+    height: 600px;
+    width: 40%;
+    background-image: url("homepage_maintenance.jpg");
+}
+
+.design-installation {
+    height: 500px;
+    width: 50%;
+}
+
+.installation-img {
+    height: 500px;
+    width: 50%;
+    background-image: url("homepage_installation.jpg");
+}
+
+.about1 {
+    height: 300px;
+    width: 40%;
+}
+
+.about2 {
+    height: 300px; 
+    width: 50%;
+}
+
+.about3 {
+    height: 250px;
+    width: 40%;
+}
