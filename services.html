@@ -1,75 +1,101 @@
-{% extends "index.html" %}
-{% block content %}
-    <h2>SERVICES</h2>
-    <div class="container-white">
-        <div class="content maintenance">
-            <h3 id="maintenance-header">Landscape Maintenance</h3>
-            <p>
-                <em>At Echo Landscaping, we provide consistent and high-quality services to keep your residential and commercial property 
-                looking great.</em>
-            </p>
-            <h4>Lawn Care</h4>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Echo Landscaping</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Echo Landscaping</h1>
+        <nav class="navbar">
             <ul>
-                <li>Mowing</li>
-                <li>Aeration and Lime Application</li>
-                <li>Fertilizing</li>
-                <li>Weed and Moss Control</li>
-                <li>Topdressing and Overseeding</li>
-                <li>Power Raking</li>
-            </ul>
-            <h4>Garden Maintenance</h4>
-            <ul>
-                <li>Weeding</li>
-                <li>Cultivating and Raking</li>
-                <li>Pruning and Shaping Shrubs and Small Trees</li>
-                <li>Weed and Moss Control</li>
-                <li>Hedge Trimming</li>
-                <li>Spring and Fall Cleanups</li>
-            </ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./about">About</a></li>
+                <li><a href="./services">Services</a></li>
+                <li><a href="./portfolio">Portfolio</a></li>
+                <li><a href="./contact">Contact</a></li>
+            </ul>  
+        </nav>
+
+        <h2>SERVICES</h2>
+        <div class="container-white">
+            <div class="content maintenance">
+                <h3 id="maintenance-header">Landscape Maintenance</h3>
+                <p>
+                    <em>At Echo Landscaping, we provide consistent and high-quality services to keep your residential and commercial property 
+                    looking great.</em>
+                </p>
+                <h4>Lawn Care</h4>
+                <ul>
+                    <li>Mowing</li>
+                    <li>Aeration and Lime Application</li>
+                    <li>Fertilizing</li>
+                    <li>Weed and Moss Control</li>
+                    <li>Topdressing and Overseeding</li>
+                    <li>Power Raking</li>
+                </ul>
+                <h4>Garden Maintenance</h4>
+                <ul>
+                    <li>Weeding</li>
+                    <li>Cultivating and Raking</li>
+                    <li>Pruning and Shaping Shrubs and Small Trees</li>
+                    <li>Weed and Moss Control</li>
+                    <li>Hedge Trimming</li>
+                    <li>Spring and Fall Cleanups</li>
+                </ul>
+            </div>
+            <div class="image maintenance-img"></div>
         </div>
-        <div class="image maintenance-img"></div>
-    </div>
-    <div class="container-green">
-        <div class="image installation-img"></div>
-        <div class="content design-installation">
+        <div class="container-green">
+            <div class="image installation-img"></div>
+            <div class="content design-installation">
+                <br>
+                <h3 id="design-header">Garden Design & Installation</h3>
+                <p>
+                    <em>We design and construct your garden, executed to the smallest detail and complete with a schedule and budget.</em>
+                </p>
+                <h4>Soft Landscaping</h4>
+                <ul>
+                    <li>Installation of Soil and Mulch</li>
+                    <li>Supply and Installation of Annuals, Perennials, Shrubs, and Small Trees</li>
+                    <li>Lawn Installation and Repair</li>
+                </ul>
+                <h4>Hard Landscaping</h4>
+                <ul>
+                    <li>Flower and Vegetable Bed Installation</li>
+                    <li>Rock Gardens</li>
+                    <li>Paver Installation</li>
+                    <li>Fences, Trellises, and Arbors</li>
+                    <li>Retaining Walls</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content irrigation">
             <br>
-            <h3 id="design-header">Garden Design & Installation</h3>
+            <h3 id="irrigation-header">Irrigation System Management</h3>
             <p>
-                <em>We design and construct your garden, executed to the smallest detail and complete with a schedule and budget.</em>
+                <em>Maintaining irrigation systems is one of the most effective ways to reduce wasted water and improve plant health.</em>
             </p>
-            <h4>Soft Landscaping</h4>
+            <h4>Irrigation Start-Up and Winterization</h4>
             <ul>
-                <li>Installation of Soil and Mulch</li>
-                <li>Supply and Installation of Annuals, Perennials, Shrubs, and Small Trees</li>
-                <li>Lawn Installation and Repair</li>
+                <li>System Start-Up in Spring</li>
+                <li>System Winterization</li>
             </ul>
-            <h4>Hard Landscaping</h4>
+            <h4>System Assessment, Upgrading, and Repair</h4>
             <ul>
-                <li>Flower and Vegetable Bed Installation</li>
-                <li>Rock Gardens</li>
-                <li>Paver Installation</li>
-                <li>Fences, Trellises, and Arbors</li>
-                <li>Retaining Walls</li>
+                <li>Review System to Ensure Functionality</li>
+                <li>Make Adjustments to Meet Municipal Water Regulations</li>
+                <li>Make Adjustments for Overspraying</li>
+                <li>Upgrade and Repair Irrigation System to Improve Performance</li>
             </ul>
         </div>
-    </div>
-    <div class="content irrigation">
-        <br>
-        <h3 id="irrigation-header">Irrigation System Management</h3>
-        <p>
-            <em>Maintaining irrigation systems is one of the most effective ways to reduce wasted water and improve plant health.</em>
-        </p>
-        <h4>Irrigation Start-Up and Winterization</h4>
-        <ul>
-            <li>System Start-Up in Spring</li>
-            <li>System Winterization</li>
-        </ul>
-        <h4>System Assessment, Upgrading, and Repair</h4>
-        <ul>
-            <li>Review System to Ensure Functionality</li>
-            <li>Make Adjustments to Meet Municipal Water Regulations</li>
-            <li>Make Adjustments for Overspraying</li>
-            <li>Upgrade and Repair Irrigation System to Improve Performance</li>
-        </ul>
-    </div>
-{% endblock %}
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
+
