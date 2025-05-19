@@ -185,3 +185,12 @@ p, li, label {
     width: 60%;
     background-image: url("./assets/about_3.jpg");
 }
+
+.footer {
+    height: 300px;
+    text-align: center;
+}
+
+footer .contact-form {
+    padding: 50px;
+}
