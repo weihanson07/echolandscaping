@@ -1,44 +1,70 @@
-{% extends "index.html" %}
-{% block content %}
-    <h2>CONTACT US!</h2>
-    <div class="contact">
-        <h3>Get a Free Quote!</h3>
-        <p>To get a free quote, please contact us at your convenience. We look forward to serving you.</p>
-        <br>
-        <div class="contact-form">
-            <form method="POST">
-                <label for="firstname">First name:</label>
-                <input type="text" id="firstname" name="firstname">
-                <br><br>
-                <label for="lastname">Last name:</label>
-                <input type="text" id="lastname" name="lastname">
-                <br><br>
-                <label for="phone">Phone number:</label>
-                <input type="text" id="phone" name="phone">
-                <br><br>
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email">
-                <br><br>
-                <label for="address">Street Address:</label>
-                <input type="text" id="address" name="address">
-                <br><br>
-                <label for="city">City:</label>
-                <input type="text" id="city" name="city">
-                <br><br>
-                <label for="message">Message:</label>
-                <textarea rows="10" cols="30" id="message" name="message"></textarea>
-                <br><br>
-                <input type="submit" value="Submit">
-            </form>
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Echo Landscaping</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Echo Landscaping</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="./">Home</a></li>
+                <li><a href="./about">About</a></li>
+                <li><a href="./services">Services</a></li>
+                <li><a href="./portfolio">Portfolio</a></li>
+                <li><a href="./contact">Contact</a></li>
+            </ul>  
+        </nav>
+
+        <h2>CONTACT US!</h2>
+        <div class="contact">
+            <h3>Get a Free Quote!</h3>
+            <p>To get a free quote, please contact us at your convenience. We look forward to serving you.</p>
+            <br>
+            <div class="contact-form">
+                <form method="POST">
+                    <label for="firstname">First name:</label>
+                    <input type="text" id="firstname" name="firstname">
+                    <br><br>
+                    <label for="lastname">Last name:</label>
+                    <input type="text" id="lastname" name="lastname">
+                    <br><br>
+                    <label for="phone">Phone number:</label>
+                    <input type="text" id="phone" name="phone">
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email">
+                    <br><br>
+                    <label for="address">Street Address:</label>
+                    <input type="text" id="address" name="address">
+                    <br><br>
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city">
+                    <br><br>
+                    <label for="message">Message:</label>
+                    <textarea rows="10" cols="30" id="message" name="message"></textarea>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+            <h3>echolandscaping.ca</h3>
+            <h4>778-990-6080</h4>
+            <br>
+            <h3>Hours</h3>
+            <p>
+                Monday to Friday: 7 a.m. to 5 p.m. <br>
+                Saturday: By appointment <br>
+                Sunday: Closed
+            </p>
         </div>
-        <h3>echolandscaping.ca</h3>
-        <h4>778-990-6080</h4>
-        <br>
-        <h3>Hours</h3>
-        <p>
-            Monday to Friday: 7 a.m. to 5 p.m. <br>
-            Saturday: By appointment <br>
-            Sunday: Closed
-        </p>
-    </div>
-{% endblock %}
+    </body>
+
+    <footer>
+
+    </footer>
+</html>
+
