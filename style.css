@@ -2,7 +2,7 @@ body {
     background-color: #e1e1e3
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, label {
+h1, h2, h3, h4, h5, h6, p, a, li, label, input, textarea {
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
@@ -45,11 +45,7 @@ p, li, label {
 }
 
 .navbar a:hover {
-    background-color: #546C18;
-}
-
-.contact {
-    text-align: center;
+    background-color: #546C18
 }
 
 .homepage {
@@ -102,7 +98,7 @@ p, li, label {
     margin-top: 50px;
     padding-top: 20px;
     height: 350px;
-    background-color: #dfe8df;
+    background-color: #b1ccb8;
 }
 
 .container-white, .container-green {
@@ -115,7 +111,7 @@ p, li, label {
 }
 
 .container-green {
-    background-color: #dfe8df;
+    background-color: #b1ccb8;
 }
 
 .content {
@@ -166,7 +162,7 @@ p, li, label {
 
 .about2 {
     height: 300px; 
-    width: 50%;
+    width: 60%;
 }
 
 .about-img2 {
@@ -186,11 +182,121 @@ p, li, label {
     background-image: url("./assets/about_3.jpg");
 }
 
+.slideshow {
+    height: 550px;
+    max-width: 1000px;
+    position: relative;
+    margin: 50px auto 25px auto;
+    overflow: hidden;
+}
+
+.slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slides {
+    display: none;
+    animation: fade 0.8s ease-in-out;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.dots {
+    text-align: center;
+}
+
+.dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border: 1.5px solid black;
+    border-radius: 50%;
+    margin: 25px 4px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute; 
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0px 3px 3px 0px;
+    background-color: rgba(0,0,0,0.65);
+    
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,1);
+}
+
+.next {
+    right: 0;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-form {
+    text-align: center;
+    justify-items: center;
+}
+
 .footer {
     height: 300px;
     text-align: center;
 }
 
 footer .contact-form {
-    padding: 51px;
+    padding: 50px;
 }
+
+form {
+    width: 90%;
+    max-width: 700px;
+    margin: 30px;
+}
+
+.input {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    font-size: 13px;
+}
+
+label {
+    position: absolute;
+    height: 100%;
+    top: -30px;
+    left: 0px;
+}
+
+input[type="submit"] {
+    padding: 12px;
+    background-color: #8EBE25;
+    border: 1px solid #000;
+    cursor: pointer;
+    width: 35%;
+    font-size: 15px;
+}
+
