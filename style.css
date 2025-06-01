@@ -274,6 +274,7 @@ p, li, label {
 .footer {
     height: 300px;
     text-align: center;
+    animation: fade 1.5s ease-in;
 }
 
 footer .contact-form {
