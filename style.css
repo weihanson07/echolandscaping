@@ -50,11 +50,25 @@ p, li, label {
 
 .homepage {
     text-align: center;
+    animation: fade 1.5s ease-in;
+}
+
+.page {
+    animation: fade 1.5s ease-in;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .banner {
     height: 300px;
-    background-image: url("./assets/homepage_banner.jpg");
+    background-image: url("homepage_banner.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -87,11 +101,11 @@ p, li, label {
 }
 
 #service-box-1 {
-    background-image: url("./assets/homepage_maintenance.jpg");
+    background-image: url("homepage_maintenance.jpg");
 }
 
 #service-box-2 {
-    background-image: url("./assets/homepage_installation.jpg");
+    background-image: url("homepage_installation.jpg");
 }
 
 .testimonial {
@@ -135,7 +149,7 @@ p, li, label {
 .maintenance-img {
     height: 600px;
     width: 40%;
-    background-image: url("./assets/homepage_maintenance.jpg");
+    background-image: url("homepage_maintenance.jpg");
 }
 
 .design-installation {
@@ -146,7 +160,7 @@ p, li, label {
 .installation-img {
     height: 500px;
     width: 50%;
-    background-image: url("./assets/homepage_installation.jpg");
+    background-image: url("homepage_installation.jpg");
 }
 
 .about1 {
@@ -157,7 +171,7 @@ p, li, label {
 .about-img1 {
     height: 300px;
     width: 60%;
-    background-image: url("./assets/about_1.jpg");
+    background-image: url("about_1.jpg");
 }
 
 .about2 {
@@ -168,7 +182,7 @@ p, li, label {
 .about-img2 {
     height: 300px;
     width: 40%;
-    background-image: url("./assets/about_2.jpg");
+    background-image: url("about_2.jpg");
 }
 
 .about3 {
@@ -179,7 +193,7 @@ p, li, label {
 .about-img3 {
     height: 250px;
     width: 60%;
-    background-image: url("./assets/about_3.jpg");
+    background-image: url("about_3.jpg");
 }
 
 .slideshow {
@@ -199,10 +213,10 @@ p, li, label {
 
 .slides {
     display: none;
-    animation: fade 0.8s ease-in-out;
+    animation: gallery-fade 0.8s ease-in-out;
 }
 
-@keyframes fade {
+@keyframes gallery-fade {
     from {
         opacity: 0.3;
     }
