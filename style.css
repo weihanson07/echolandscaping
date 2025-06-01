@@ -50,20 +50,6 @@ p, li, label {
 
 .homepage {
     text-align: center;
-    animation: fade 1.5s ease-in;
-}
-
-.page {
-    animation: fade 1.5s ease-in;
-}
-
-@keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
 }
 
 .banner {
@@ -213,10 +199,10 @@ p, li, label {
 
 .slides {
     display: none;
-    animation: gallery-fade 0.8s ease-in-out;
+    animation: fade 0.8s ease-in-out;
 }
 
-@keyframes gallery-fade {
+@keyframes fade {
     from {
         opacity: 0.3;
     }
