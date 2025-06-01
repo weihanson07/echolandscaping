@@ -213,10 +213,10 @@ p, li, label {
 
 .slides {
     display: none;
-    animation: fade 0.8s ease-in-out;
+    animation: gallery-fade 0.8s ease-in-out;
 }
 
-@keyframes fade {
+@keyframes gallery-fade {
     from {
         opacity: 0.3;
     }
