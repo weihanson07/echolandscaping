@@ -13,6 +13,21 @@ h1 {
     font-weight: 700;
 }
 
+.header {
+    background-color: #8EBE25;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.header img {
+    width: 20%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 h2 {
     text-align: center;
     font-weight: 700;
@@ -26,10 +41,20 @@ p, li, label {
     font-weight: 400;
 }
 
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.3);
+}
+
 .navbar ul {
     background-color: #8EBE25;
+    margin-block-start: 0px;
     list-style-type: none;
     overflow: hidden;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .navbar a {
@@ -80,6 +105,7 @@ p, li, label {
     position: relative;
     top: 90px;
     margin: auto;
+    border-radius: 10px;
 }
 
 .banner-content h2 {
@@ -96,8 +122,16 @@ p, li, label {
     height: 200px;
     background-color:#8EBE25;
     border: 3px solid #1c3618;
+    border-radius: 5px;
     margin: 5px 25px;
     background-size: cover;
+}
+
+.service a {
+    text-decoration: none;
+    display: inline-block;
+    width: fit-content;
+    box-sizing: border-box;
 }
 
 #service-box-1 {
@@ -106,6 +140,17 @@ p, li, label {
 
 #service-box-2 {
     background-image: url("./assets/homepage_installation.jpg");
+}
+
+.service-box h3 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 22px;
+}
+
+.service-box:hover {
+  transform: translateY(-7px);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
 .testimonial {
@@ -117,7 +162,11 @@ p, li, label {
 
 .container-white, .container-green {
     display: table;
-    width: 100%;
+    width: 95%;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 15px auto;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 .container-white {
@@ -139,6 +188,7 @@ p, li, label {
     vertical-align: top;
     background-size: cover;
     background-position: center;
+    border-radius: 10px;
 }
 
 .maintenance {
@@ -193,7 +243,7 @@ p, li, label {
 .about-img3 {
     height: 250px;
     width: 60%;
-    background-image: url("./assets/about_3.jpg");
+    background-image:url("./assets/about_3.jpg");
 }
 
 .slideshow {
@@ -201,6 +251,7 @@ p, li, label {
     max-width: 1000px;
     position: relative;
     margin: 50px auto 25px auto;
+    border-radius: 10px;
     overflow: hidden;
 }
 
@@ -314,3 +365,4 @@ input[type="submit"] {
     width: 35%;
     font-size: 15px;
 }
+
