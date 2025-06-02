@@ -142,6 +142,10 @@ p, li, label {
     background-image: url("./assets/homepage_installation.jpg");
 }
 
+#service-box-3 {
+    background-image: url("./assets/homepage_irrigation.jpg");
+}
+
 .service-box h3 {
     text-transform: uppercase;
     color: white;
