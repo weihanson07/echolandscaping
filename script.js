@@ -3,7 +3,7 @@ var slides = document.getElementsByClassName("slides");
 var dots = document.getElementsByClassName("dot");
 display(ind);
 
-setInterval(function() {
+var func = setInterval(function() {
     add(1);
 }, 5000)
 
@@ -25,3 +25,15 @@ function display(n) {
     slides[ind].style.display = "block";
     dots[ind].style.backgroundColor = "#8EBE25";
 }
+
+var container = document.querySelector(".slideshow");
+
+container.addEventListener("mouseleave", function() {
+    func = setInterval(function() {
+        add(1);
+    }, 5000)
+})
+
+container.addEventListener("mouseenter", function() {
+    clearInterval(func);
+})
