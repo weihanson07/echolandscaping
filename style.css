@@ -14,7 +14,7 @@ h1 {
 }
 
 .header {
-    background-color: #8EBE25;
+    background: linear-gradient(to right, #566E38, #8EBE25);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
@@ -31,6 +31,7 @@ h1 {
 h2 {
     text-align: center;
     font-weight: 700;
+    font-size: 30px;
 }
 
 h3, h4, h5, h6 {
@@ -49,7 +50,7 @@ p, li, label {
 }
 
 .navbar ul {
-    background-color: #8EBE25;
+    background: linear-gradient(to right, #566E38, #8EBE25);
     margin-block-start: 0px;
     list-style-type: none;
     overflow: hidden;
@@ -70,7 +71,7 @@ p, li, label {
 }
 
 .navbar a:hover {
-    background-color: #546C18
+    background-color: #2a4527;
 }
 
 .homepage {
@@ -173,7 +174,8 @@ p, li, label {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
     opacity: 0;
     transform: translateY(50px);
-    transition: opacity 0.6s ease, transform 0.6s ease;
+    transform: scale(1);
+    transition: scale 0.1s ease, opacity 0.6s ease, transform 0.6s ease;
 }
 
 .container-white.visible, .container-green.visible {
@@ -186,18 +188,31 @@ p, li, label {
     transform: translateY(50px);
 }
 
+.container-white:hover, .container-green:hover {
+    transform: scale(1.02);
+}
+
 .container-white {
     background-color: #FFFFFF;
 }
 
 .container-green {
-    background-color: #b1ccb8;
+    background-color:#dde6da;
 }
 
 .content {
     display: table-cell;
     vertical-align: top;
     padding: 50px;
+}
+
+.content h3 {
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 700;
+    background-image: linear-gradient(to right,#203816, #74bf56);
+    color: transparent;
+    background-clip: text;
 }
 
 .image {
@@ -380,7 +395,7 @@ label {
 
 input[type="submit"] {
     padding: 12px;
-    background-color: #8EBE25;
+    background: linear-gradient(to right, #566E38, #8EBE25);
     border: 1px solid #000;
     cursor: pointer;
     width: 35%;
