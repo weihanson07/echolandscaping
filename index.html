@@ -47,8 +47,30 @@
                     </div>
                 </a>
             </div>
-            <div class="testimonial">
+            <div class="container-green">
                 <h2>HEAR FROM OUR CUSTOMERS</h2>
+                <div class="testimonial">
+                    <div class="slides">
+                        <p>Quote 1</p>
+                    </div>
+                    <div class="slides">
+                        <p>Quote 2</p>
+                    </div>
+                    <div class="slides">
+                        <p>Quote 3</p>
+                    </div>
+                    <div class="slides">
+                        <p>Quote 4</p>
+                    </div>
+                    <a class="prev" onclick="add(-1)">&#10094;</a>
+                    <a class="next" onclick="add(1)">&#10095;</a>
+                </div>
+                <div class="dots">
+                    <span class="dot" onclick="display(1)"></span>
+                    <span class="dot" onclick="display(2)"></span>
+                    <span class="dot" onclick="display(3)"></span>
+                    <span class="dot" onclick="display(4)"></span>
+                </div>
             </div>
         </div>
         <footer class="footer">
@@ -89,5 +111,8 @@
                 </form>
             </div>
         </footer>
+
+        <script src="slideshow.js"></script>
+        <script src="transition.js"></script>
     </body>
 </html>

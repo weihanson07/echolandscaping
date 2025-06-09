@@ -124,7 +124,7 @@ p, li, label {
     background-color:#8EBE25;
     border: 3px solid #1c3618;
     border-radius: 5px;
-    margin: 5px 25px;
+    margin: 5px 25px 25px;
     background-size: cover;
 }
 
@@ -158,11 +158,26 @@ p, li, label {
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.testimonial {
+.testimonial-container {
     margin-top: 50px;
     padding-top: 20px;
-    height: 350px;
-    background-color: #b1ccb8;
+    background-color: #dde6da;
+}
+
+.testimonial {
+    height: 200px;
+    margin: auto;
+}
+
+.testimonial .slides {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.testimonial p {
+    font-size: 24px;
 }
 
 .container-white, .container-green {
@@ -278,13 +293,16 @@ p, li, label {
     background-image:url("./assets/about_3.jpg");
 }
 
-.slideshow {
-    height: 550px;
+.slideshow, .testimonial {
     max-width: 1000px;
     position: relative;
-    margin: 50px auto 25px auto;
     border-radius: 10px;
     overflow: hidden;
+}
+
+.slideshow {
+    height: 550px;
+    margin: 50px auto 25px auto;
 }
 
 .slideshow:hover {
@@ -331,6 +349,7 @@ p, li, label {
     cursor: pointer;
     position: absolute; 
     top: 50%;
+    transform: translateY(-50%);
     width: auto;
     padding: 16px;
     color: #FFFFFF;
@@ -343,6 +362,10 @@ p, li, label {
 
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,1);
+}
+
+.prev {
+    left: 0;
 }
 
 .next {
